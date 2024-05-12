@@ -1,0 +1,13 @@
+/* Add styles for the submit button */
+input[type="submit"] {
+    background-color: #007bff; /* Blue color by default */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor style */
+}
+
+/* Additional style when the font is successfully loaded */
+.font-loaded input[type="submit"] {
+    background-color: green; /* Change background color to green */
+}

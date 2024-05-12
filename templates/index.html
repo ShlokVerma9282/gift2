@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Retrieval</title>
+</head>
+<body>
+    <h1>Enter your query:</h1>
+    <form action="/get_knowledge" method="post">
+        <label for="user_input">Enter your query:</label>
+        <input type="text" id="user_input" name="user_input" placeholder="Enter your query" title="Query Input">
+        <input type="submit" value="Submit">
+    </form>
+    {% if knowledge %}
+        <h2>Knowledge:</h2>
+        <p>{{ knowledge }}</p>
+    {% endif %}
+
+    <!-- Include the JavaScript file for font loading -->
+    <script src="{{ url_for('static', filename='loadFonts.js') }}"></script>
+</body>
+</html>
